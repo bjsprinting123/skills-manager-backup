@@ -7,8 +7,8 @@
   "tags": [],
   "source": {
     "type": "git",
-    "ref": "https://github.com/MCKRUZ/ComfyUI-Expert/tree/master/skills/comfyui-inventory",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/comfyui-inventory",
     "subpath": "skills/comfyui-inventory",
-    "branch": "master"
+    "branch": "main"
   }
 }
