@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2fb96c4e-f6e7-4e1b-954a-4769c3b3aedf",
+  "path": "shortdrama-director",
+  "path_key": "shortdrama-director",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/shortdrama-director",
+    "subpath": "skills/shortdrama-director",
+    "branch": "main"
+  }
+}

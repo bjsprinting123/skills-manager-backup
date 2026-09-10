@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "00c0f45f-c1c1-4705-a57c-fe58eb7edf67",
+  "path": "model-compatibility",
+  "path_key": "model-compatibility",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/artokun/comfyui-mcp/tree/main/plugin/skills/model-compatibility",
+    "subpath": "plugin/skills/model-compatibility",
+    "branch": "main"
+  }
+}

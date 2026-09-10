@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e5ff2b62-cc18-4b62-a0c0-f79c73142018",
+  "path": "h3-video-prompts",
+  "path_key": "h3-video-prompts",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/h3-video-prompts",
+    "subpath": "skills/h3-video-prompts",
+    "branch": "main"
+  }
+}

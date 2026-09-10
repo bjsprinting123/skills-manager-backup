@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "4cc840af-0039-484a-9657-69f8e6a6c831",
+  "name": "AI短剧创作",
+  "description": "通用短剧创作、Krea2生图提示词与MiniMax H3视频提示词",
+  "icon": null,
+  "sort_order": 999
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "20e455e2-7919-43fb-b67b-b661f7f8d54d",
+  "path": "krea2-image-prompts",
+  "path_key": "krea2-image-prompts",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/krea2-image-prompts",
+    "subpath": "skills/krea2-image-prompts",
+    "branch": "main"
+  }
+}

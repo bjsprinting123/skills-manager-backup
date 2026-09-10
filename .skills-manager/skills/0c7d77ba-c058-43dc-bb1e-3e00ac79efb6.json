@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "0c7d77ba-c058-43dc-bb1e-3e00ac79efb6",
+  "path": "comfyui-model-library",
+  "path_key": "comfyui-model-library",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/comfyui-model-library",
+    "subpath": "skills/comfyui-model-library",
+    "branch": "main"
+  }
+}

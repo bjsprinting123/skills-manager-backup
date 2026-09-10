@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "fd13cc9d-f073-4431-82d4-0a9e3a24af7e",
+  "path": "domain-modeling",
+  "path_key": "domain-modeling",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "mattpocock/skills/domain-modeling",
+    "subpath": "skills\\engineering\\domain-modeling",
+    "branch": null
+  }
+}

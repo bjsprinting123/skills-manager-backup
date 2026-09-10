@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tavily Search"
+  short_description: "Run Tavily web searches and archive raw results"
+  default_prompt: "Use the Tavily CLI for targeted web research and save raw JSON results when project instructions require archival."

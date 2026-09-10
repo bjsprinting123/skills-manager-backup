@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ad018623-3656-4f80-b95e-13581e1d8002",
+  "path": "media-transcriber",
+  "path_key": "media-transcriber",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

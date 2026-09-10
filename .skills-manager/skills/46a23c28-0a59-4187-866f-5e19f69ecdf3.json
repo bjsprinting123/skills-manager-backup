@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "46a23c28-0a59-4187-866f-5e19f69ecdf3",
+  "path": "to-questionnaire",
+  "path_key": "to-questionnaire",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "mattpocock/skills/to-questionnaire",
+    "subpath": "skills\\productivity\\to-questionnaire",
+    "branch": null
+  }
+}

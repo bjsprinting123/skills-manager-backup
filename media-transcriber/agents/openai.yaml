@@ -1,0 +1,4 @@
+interface:
+  display_name: "Media Transcriber"
+  short_description: "Download or read media and produce WAV, TXT, SRT, and JSON"
+  default_prompt: "Use $media-transcriber to download or read this media and produce a timestamped transcript bundle."

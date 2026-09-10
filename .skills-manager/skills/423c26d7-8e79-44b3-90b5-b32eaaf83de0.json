@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "423c26d7-8e79-44b3-90b5-b32eaaf83de0",
+  "path": "comfyui-workflow-docs",
+  "path_key": "comfyui-workflow-docs",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/comfyui-workflow-docs",
+    "subpath": "skills/comfyui-workflow-docs",
+    "branch": "main"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ComfyUI 工作流文档生成器"
+  short_description: "把 ComfyUI 工作流 JSON 转换为可核验的中文操作文档"
+  default_prompt: "使用 $comfyui-workflow-docs 分析这个 ComfyUI 工作流 JSON，并生成经过核验的中文工作流文档。"

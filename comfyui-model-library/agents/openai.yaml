@@ -1,0 +1,4 @@
+interface:
+  display_name: "ComfyUI 模型库梳理"
+  short_description: "查清模型与 LoRA 的用途、搭配、加速方式和来源，生成易读命名方案"
+  default_prompt: "使用 $comfyui-model-library 梳理我指定的模型文件夹，逐个解释用途、底模搭配、名称含义和加速区别，查证来源并输出中文模型卡与命名建议。"

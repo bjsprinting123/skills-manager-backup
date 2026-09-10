@@ -1,0 +1,408 @@
+/*
+ * 工作流文档库专用样式
+ * 面向中文长文、节点参数表、路径、代码块与核验提示。
+ */
+
+.markdown-reading-view,
+.markdown-source-view.mod-cm6 {
+  --file-line-width: min(96%, 1680px);
+  --workflow-font-text: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC",
+    "Noto Sans CJK SC", "Source Han Sans SC", system-ui, sans-serif;
+  --workflow-font-code: "Cascadia Code", "JetBrains Mono", "SFMono-Regular",
+    Consolas, monospace;
+  --workflow-soft-bg: color-mix(in srgb, var(--interactive-accent) 7%, var(--background-primary));
+  --workflow-border: color-mix(in srgb, var(--text-muted) 24%, transparent);
+  --workflow-heading: color-mix(in srgb, var(--text-normal) 88%, var(--interactive-accent));
+  font-family: var(--workflow-font-text);
+  line-height: 1.78;
+  letter-spacing: 0.012em;
+}
+
+.markdown-reading-view .markdown-preview-sizer,
+.markdown-source-view.mod-cm6 .cm-sizer {
+  padding-left: clamp(22px, 4vw, 54px) !important;
+  padding-right: clamp(22px, 4vw, 54px) !important;
+  padding-bottom: 12vh !important;
+}
+
+.markdown-reading-view p,
+.markdown-source-view.mod-cm6 .cm-line {
+  overflow-wrap: anywhere;
+}
+
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.markdown-reading-view h3,
+.markdown-reading-view h4,
+.markdown-source-view.mod-cm6 .HyperMD-header {
+  color: var(--workflow-heading);
+  font-family: var(--workflow-font-text);
+  font-weight: 720;
+  letter-spacing: -0.015em;
+}
+
+.markdown-reading-view h1 {
+  margin-top: 0.4em;
+  padding-bottom: 0.42em;
+  border-bottom: 2px solid color-mix(in srgb, var(--interactive-accent) 38%, transparent);
+  font-size: 2em;
+}
+
+.markdown-reading-view h2 {
+  margin-top: 2.1em;
+  padding: 0.18em 0 0.28em 0.62em;
+  border-left: 4px solid var(--interactive-accent);
+  border-bottom: 1px solid var(--workflow-border);
+  font-size: 1.52em;
+}
+
+.markdown-reading-view h3 {
+  margin-top: 1.7em;
+  font-size: 1.24em;
+}
+
+.markdown-reading-view h4 {
+  margin-top: 1.45em;
+  font-size: 1.08em;
+}
+
+.markdown-reading-view ul,
+.markdown-reading-view ol {
+  padding-inline-start: 1.7em;
+}
+
+.markdown-reading-view li {
+  margin: 0.28em 0;
+}
+
+.markdown-reading-view a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.markdown-reading-view strong {
+  color: color-mix(in srgb, var(--text-normal) 88%, var(--interactive-accent));
+  font-weight: 720;
+}
+
+.markdown-reading-view blockquote {
+  margin: 1.15em 0;
+  padding: 0.8em 1.1em;
+  border-left: 4px solid var(--interactive-accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--workflow-soft-bg);
+  color: var(--text-normal);
+}
+
+.markdown-reading-view hr {
+  margin: 2.2em 0;
+  border: 0;
+  border-top: 1px solid var(--workflow-border);
+}
+
+.markdown-reading-view code,
+.markdown-source-view.mod-cm6 code {
+  font-family: var(--workflow-font-code);
+  font-size: 0.9em;
+}
+
+.markdown-reading-view :not(pre) > code {
+  padding: 0.13em 0.38em;
+  border: 1px solid var(--workflow-border);
+  border-radius: 5px;
+  background: var(--code-background);
+  overflow-wrap: anywhere;
+}
+
+.markdown-reading-view pre {
+  margin: 1.15em 0;
+  padding: 1em 1.15em;
+  border: 1px solid var(--workflow-border);
+  border-radius: 9px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 5%);
+}
+
+.markdown-reading-view .table-wrapper {
+  width: 100%;
+  margin: 1.2em 0;
+  overflow-x: visible;
+  border: 1px solid var(--workflow-border);
+  border-radius: 9px;
+}
+
+.markdown-reading-view table {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.93em;
+}
+
+.markdown-reading-view th {
+  background: var(--workflow-soft-bg);
+  color: var(--workflow-heading);
+  font-weight: 720;
+  text-align: left;
+}
+
+.markdown-reading-view th,
+.markdown-reading-view td {
+  min-width: 0;
+  padding: 0.68em 0.78em;
+  border-right: 1px solid var(--workflow-border);
+  border-bottom: 1px solid var(--workflow-border);
+  vertical-align: top;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Ordinary tables stay inside the page. Long paths, model names and hashes wrap. */
+.markdown-reading-view th code,
+.markdown-reading-view td code {
+  display: inline;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  vertical-align: baseline;
+}
+
+/* Give five-column node inventories useful proportions without forcing overflow. */
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):not(:has(> tbody > tr > td:first-child code)) th:first-child {
+  width: 8%;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):not(:has(> tbody > tr > td:first-child code)) th:nth-child(2) {
+  width: 30%;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):not(:has(> tbody > tr > td:first-child code)) th:nth-child(3) {
+  width: 25%;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):not(:has(> tbody > tr > td:first-child code)) th:nth-child(4) {
+  width: 12%;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):not(:has(> tbody > tr > td:first-child code)) th:nth-child(5) {
+  width: 25%;
+}
+
+.markdown-reading-view tr:last-child td {
+  border-bottom: 0;
+}
+
+.markdown-reading-view th:last-child,
+.markdown-reading-view td:last-child {
+  border-right: 0;
+}
+
+.markdown-reading-view tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--background-secondary) 58%, transparent);
+}
+
+/*
+ * Parameter tables become stacked cards in reading view. This keeps all five
+ * explanations visible without a horizontal scrollbar or squeezed columns.
+ */
+.markdown-reading-view .table-wrapper:has(table > thead > tr > th:nth-child(5)):has(table > tbody > tr > td:first-child code) {
+  overflow-x: visible;
+  border: 0;
+  border-radius: 0;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  font-size: 0.95em;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) thead {
+  display: none;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) tbody {
+  display: grid;
+  gap: 1em;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) tr {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid var(--workflow-border);
+  border-radius: 9px;
+  background: var(--background-primary);
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td {
+  display: block;
+  min-width: 0;
+  padding: 0.78em 0.9em;
+  border: 0;
+  overflow-wrap: anywhere;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:first-child {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid var(--workflow-border);
+  background: var(--workflow-soft-bg);
+  color: var(--workflow-heading);
+  font-weight: 720;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:nth-child(2),
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:nth-child(3) {
+  border-bottom: 1px solid var(--workflow-border);
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:nth-child(even) {
+  border-right: 1px solid var(--workflow-border);
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td::before {
+  display: block;
+  margin-bottom: 0.38em;
+  color: var(--text-muted);
+  font-size: 0.78em;
+  font-weight: 720;
+  letter-spacing: 0.045em;
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:first-child::before {
+  content: "参数";
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:nth-child(2)::before {
+  content: "当前值与基线";
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:nth-child(3)::before {
+  content: "参数作用";
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:nth-child(4)::before {
+  content: "两个调整方向";
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:nth-child(5)::before {
+  content: "本工作流建议、风险与回退";
+}
+
+.markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td code {
+  display: inline;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+@media (max-width: 900px) {
+  .markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) tr {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td {
+    grid-column: 1;
+    border-right: 0;
+    border-bottom: 1px solid var(--workflow-border);
+  }
+
+  .markdown-reading-view table:has(> thead > tr > th:nth-child(5)):has(> tbody > tr > td:first-child code) td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.markdown-reading-view .callout {
+  margin: 1.15em 0;
+  border-radius: 9px;
+  box-shadow: none;
+}
+
+.markdown-reading-view .mermaid {
+  width: 100%;
+  margin: 1.3em auto;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.markdown-reading-view .mermaid svg {
+  display: block;
+  width: min(100%, 1200px);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.markdown-reading-view img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.15em auto;
+  border-radius: 7px;
+}
+
+.markdown-reading-view mark {
+  padding: 0.05em 0.18em;
+  border-radius: 3px;
+}
+
+.markdown-reading-view input[type="checkbox"] {
+  margin-inline-end: 0.45em;
+}
+
+@media (max-width: 760px) {
+  .markdown-reading-view,
+  .markdown-source-view.mod-cm6 {
+    --file-line-width: 100%;
+    font-size: 0.97em;
+  }
+
+  .markdown-reading-view .markdown-preview-sizer,
+  .markdown-source-view.mod-cm6 .cm-sizer {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .markdown-reading-view h1 {
+    font-size: 1.7em;
+  }
+
+  .markdown-reading-view h2 {
+    font-size: 1.35em;
+  }
+}
+
+@media print {
+  .markdown-reading-view {
+    --file-line-width: 100%;
+    color: #111;
+    background: #fff;
+    font-size: 11pt;
+    line-height: 1.62;
+  }
+
+  .markdown-reading-view a {
+    color: inherit;
+  }
+
+  .markdown-reading-view h1,
+  .markdown-reading-view h2,
+  .markdown-reading-view h3 {
+    break-after: avoid-page;
+  }
+
+  .markdown-reading-view pre,
+  .markdown-reading-view table,
+  .markdown-reading-view blockquote,
+  .markdown-reading-view .callout {
+    break-inside: avoid-page;
+    box-shadow: none;
+  }
+}

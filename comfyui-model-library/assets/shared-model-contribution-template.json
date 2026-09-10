@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "base_revision": null,
+  "model": {
+    "model_id": "replace-me",
+    "aliases": [],
+    "publisher": null,
+    "version": null,
+    "remote_file": null,
+    "sha256": null,
+    "status": "candidate",
+    "model_role": "unknown",
+    "artifact_form": "unknown",
+    "web_identity_status": "unknown",
+    "local_binding_status": "not_checked",
+    "local_files": []
+  },
+  "summary": "待研究；不得把模板文字当成模型事实。",
+  "compatibility": {
+    "base_model": "待核实",
+    "task": "待核实",
+    "loaders": "待核实",
+    "notes": "尚无足够证据"
+  },
+  "limitations": [
+    "身份、兼容性、用法和本机状态均待核实"
+  ],
+  "author_recommendations": [],
+  "community_feedback": [],
+  "local_tests": [],
+  "sources": []
+}

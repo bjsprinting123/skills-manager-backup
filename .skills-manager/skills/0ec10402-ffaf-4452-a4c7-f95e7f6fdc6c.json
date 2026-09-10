@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "0ec10402-ffaf-4452-a4c7-f95e7f6fdc6c",
+  "path": "comfyui-inventory",
+  "path_key": "comfyui-inventory",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/MCKRUZ/ComfyUI-Expert/tree/master/skills/comfyui-inventory",
+    "subpath": "skills/comfyui-inventory",
+    "branch": "master"
+  }
+}

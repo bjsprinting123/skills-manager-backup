@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "db3c3d71-4f6b-45c9-8f3d-30963420cabe",
+  "path": "model-registry",
+  "path_key": "model-registry",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/artokun/comfyui-mcp/tree/main/plugin/skills/model-registry",
+    "subpath": "plugin/skills/model-registry",
+    "branch": "main"
+  }
+}
