@@ -4,7 +4,9 @@
   "skill_id": "db3c3d71-4f6b-45c9-8f3d-30963420cabe",
   "sort_order": 7,
   "tools": {
+    "codebuddy": true,
     "codex": true,
+    "deepseek_harness": true,
     "github_copilot": true,
     "workbuddy": true,
     "zcode": true
