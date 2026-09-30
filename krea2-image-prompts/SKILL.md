@@ -1,11 +1,13 @@
 ---
 name: krea2-image-prompts
-description: 为Krea2编写或优化生图提示词，支持一句话直接出提示词、人物场景道具、镜头静帧、看图描述、图文融合和针对性补图。用户泛称“生图”且已选择Krea2时适用；不要求剧本或工作流，不直接生成图片，不把基础文生图冒称精准编辑。
+description: Krea2图像Provider Adapter：将已确定的资产/视觉/镜头静帧需求编译为Krea2提示词，也支持用户直接的一句话单图需求。它不拥有上游故事、导演或Visual Bible决定，不直接生成图片，不把基础文生图冒称精准编辑。
 metadata:
-  version: "0.1.3"
+  version: "0.1.4"
 ---
 
 # Krea2图片提示词
+
+完整项目中，本 Skill 接收上游已确定的 Asset Spec / Visual Bible / Shot frame spec / Reference Authority；一句话单图任务仍可直接使用，不强迫先建立完整项目。
 
 先读[共同约定](references/runtime-contract.md)和[写法与输入职责](references/image-writing.md)。无需其他Skill、模型权重、ComfyUI或原作者的素材库即可编写文字。
 

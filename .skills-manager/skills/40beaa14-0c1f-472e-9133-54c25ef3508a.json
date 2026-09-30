@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "40beaa14-0c1f-472e-9133-54c25ef3508a",
+  "path": "film-post-production",
+  "path_key": "film-post-production",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-post-production",
+    "subpath": "skills/film-post-production",
+    "branch": "main"
+  }
+}

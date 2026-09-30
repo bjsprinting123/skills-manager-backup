@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ba88ad24-6800-4f99-b0b6-bce247858170",
+  "path": "film-shot-director",
+  "path_key": "film-shot-director",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-shot-director",
+    "subpath": "skills/film-shot-director",
+    "branch": "main"
+  }
+}

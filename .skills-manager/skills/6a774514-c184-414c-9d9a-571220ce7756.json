@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "6a774514-c184-414c-9d9a-571220ce7756",
+  "path": "film-performance-action",
+  "path_key": "film-performance-action",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-performance-action",
+    "subpath": "skills/film-performance-action",
+    "branch": "main"
+  }
+}

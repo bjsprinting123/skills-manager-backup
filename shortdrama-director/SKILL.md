@@ -1,11 +1,13 @@
 ---
 name: shortdrama-director
-description: 根据一句想法、剧本或已有素材规划AI短剧的故事、资产、分镜、站位、表演、动作、声音与修订。用于完整前期创作或其中一个阶段；只要Krea2单图提示或H3模式正文时优先使用对应专用入口。本Skill不操作生成工作流。
+description: 兼容保留的通用短剧前期入口，集中提供既有N/A/S/C/P/M/E/R方法：故事、资产、空间、镜头、表演、动作、声音与修订。新完整AI影视项目默认使用ai-film-studio；只做旧流程、单阶段兼容或回归比较时可直接使用本Skill。
 metadata:
-  version: "0.1.3"
+  version: "0.1.4"
 ---
 
 # 通用短剧创作
+
+> **2026-09-25 定位调整**：本 Skill 保留为兼容入口、回滚基线与成熟方法知识源。新完整项目优先从 `ai-film-studio` 进入，由 Source / Story / Director / Visual / Shot / Performance / Continuity / Production / Review / Post 分工；本 Skill 不再继续吸收所有影视职责。
 
 先读[共同约定](references/runtime-contract.md)。本包包含所需文字知识，不要求其他Skill、原始研究库、生成模型或账号。按当前任务读取下表对应资料，不每次加载全库。
 

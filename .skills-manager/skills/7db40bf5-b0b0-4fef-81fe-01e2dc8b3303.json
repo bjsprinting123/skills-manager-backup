@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "7db40bf5-b0b0-4fef-81fe-01e2dc8b3303",
+  "path": "film-production-supervisor",
+  "path_key": "film-production-supervisor",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-production-supervisor",
+    "subpath": "skills/film-production-supervisor",
+    "branch": "main"
+  }
+}

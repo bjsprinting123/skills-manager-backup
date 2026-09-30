@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c448e105-0ce7-4c62-b294-d7869b6d6514",
+  "path": "film-director",
+  "path_key": "film-director",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-director",
+    "subpath": "skills/film-director",
+    "branch": "main"
+  }
+}

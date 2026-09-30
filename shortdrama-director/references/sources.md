@@ -1,6 +1,6 @@
 # 来源与知识版本
 
-本包版本0.1.3，整理日期2026-09-10。此前 0.1.1（2026-09-08）修正C03c、M05、M06的专题引用并提供包内实践说明；0.1.2 只改了候选目录名，包内 SKILL.md 与 sources.md 仍写 0.1.1，属版本记录缺陷，已在 0.1.3 一并更正。
+本组共享来源记录版本为2026-09-25。shortdrama-director、krea2-image-prompts、h3-video-prompts 当前均为0.1.4；三者角色分别是兼容/回滚基线、Krea2 Provider Adapter、MiniMax H3 Provider Adapter。长期 Skill 真源为 E:\AI短剧\技能仓库\skills，Capability/Upgrade/Regression 真源为 E:\AI短剧\技能仓库\system。此前0.1.1修正专题引用；0.1.2仅改候选目录名；0.1.3补齐真实版本记录与官方H3资料。
 
 方法卡来自本项目v0.4整理稿，共有N/A/S/P/C/M/E/R八域72卡，具体入口只携带任务相关域，不要求取得原研究目录或私人材料。
 

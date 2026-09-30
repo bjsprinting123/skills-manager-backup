@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ee68e98f-dc8f-4dab-a6d7-c3f379870a8e",
+  "path": "film-visual-development",
+  "path_key": "film-visual-development",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-visual-development",
+    "subpath": "skills/film-visual-development",
+    "branch": "main"
+  }
+}

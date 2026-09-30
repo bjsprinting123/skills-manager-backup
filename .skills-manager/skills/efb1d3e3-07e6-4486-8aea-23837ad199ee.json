@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "efb1d3e3-07e6-4486-8aea-23837ad199ee",
+  "path": "ai-film-studio",
+  "path_key": "ai-film-studio",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/ai-film-studio",
+    "subpath": "skills/ai-film-studio",
+    "branch": "main"
+  }
+}

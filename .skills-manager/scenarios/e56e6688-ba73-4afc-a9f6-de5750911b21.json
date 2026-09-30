@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "e56e6688-ba73-4afc-a9f6-de5750911b21",
+  "name": "AI短剧维护",
+  "description": "AI影视知识与Skill升级：Upgrader + Studio + Review + Krea2/H3 Provider Adapters；用于Candidate、Diff、Benchmark、Release、Impact与Rollback，不用于普通创作。",
+  "icon": null,
+  "sort_order": 999
+}

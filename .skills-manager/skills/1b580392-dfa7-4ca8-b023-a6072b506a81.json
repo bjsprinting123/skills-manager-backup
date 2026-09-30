@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "1b580392-dfa7-4ca8-b023-a6072b506a81",
+  "path": "film-story-screenplay",
+  "path_key": "film-story-screenplay",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-story-screenplay",
+    "subpath": "skills/film-story-screenplay",
+    "branch": "main"
+  }
+}

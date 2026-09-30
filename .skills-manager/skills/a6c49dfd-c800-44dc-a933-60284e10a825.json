@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "a6c49dfd-c800-44dc-a933-60284e10a825",
+  "path": "film-review",
+  "path_key": "film-review",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-review",
+    "subpath": "skills/film-review",
+    "branch": "main"
+  }
+}

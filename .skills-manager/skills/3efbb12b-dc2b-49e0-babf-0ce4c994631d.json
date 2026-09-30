@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3efbb12b-dc2b-49e0-babf-0ce4c994631d",
+  "path": "film-assets-continuity",
+  "path_key": "film-assets-continuity",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-assets-continuity",
+    "subpath": "skills/film-assets-continuity",
+    "branch": "main"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b6bd53da-a47d-41b9-8129-d328f764784a",
+  "path": "film-source-adaptation",
+  "path_key": "film-source-adaptation",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/bjsprinting123/ai-duanju-skills/tree/main/skills/film-source-adaptation",
+    "subpath": "skills/film-source-adaptation",
+    "branch": "main"
+  }
+}

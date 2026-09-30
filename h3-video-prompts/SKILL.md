@@ -1,11 +1,13 @@
 ---
 name: h3-video-prompts
-description: 将想法、分镜与实际参考素材写成MiniMax H3视频提示词，处理T2VA、I2VA、FL2VA、L2VA、Ref2VA、表演站位、对白跨切和失败补图。适用于写稿或修订，不执行生成；已有全剧开发需求优先通用短剧创作入口，不重编已确认剧情。
+description: MiniMax H3视频Provider Adapter：将已确定的Generic Shot Spec与实际参考素材编译为T2VA、I2VA、FL2VA、L2VA、Ref2VA提示词，也支持直接单段写稿。完整项目优先从ai-film-studio进入；本Skill不重编已确认剧情、导演意图或镜头终态，也不执行生成。
 metadata:
-  version: "0.1.3"
+  version: "0.1.4"
 ---
 
 # MiniMax H3视频提示词
+
+完整项目中，本 Skill 是下游 Provider Adapter：读取已经接受的 Shot / Performance / Sound / Reference 决定，只负责转换为 H3 真实支持的字段和语法；若目标超出当前 H3 能力，返回能力冲突，不静默改写上游创作。
 
 先读[共同约定](references/runtime-contract.md)和[共同格式](references/h3-common.md)。本包含规范精炼资料，不依赖其他H3 Skill或在线Hub。普通写稿不需模型权重／账号；实际生成由用户的环境承担。
 
